@@ -1,0 +1,55 @@
+/** Somnang Rean Application for questions and answers
+
+@author: Daniel Isaac
+@Date: 15th January 2020
+@usage: This webservice is permitted to be used by all authorized party, read terms of service for more information.
+
+
+#Functions
+    @GET:
+        1.
+            @getquestions
+            @requires-auth: no
+            @params: None
+            @link: https://hostlink/EmailAuthentication/routes/api/getquestions/
+            @returns: Collection of questions, paginated
+        2.
+            @getAnswers:
+            @requires-auth: no
+            @params: QuestionId
+            @link https://hostlink/EmailAuthentication/routes/api/{questionId}/getAnswers/
+            @returns: Collection of answers, paginated
+    @POST
+        1.
+            @signup
+            @params: None
+            @headers: Email, Password, and Password_confirmation
+            @link: https://hostlink/EmailAuthentication/routes/api/signup/
+            @returns: User model
+        2.
+            @signin
+            @params: None
+            @headers: Email, Password
+            @link: https://hostlink/EmailAuthentication/routes/api/signin/
+            @condition: -User must be activated-
+            @returns: User model
+        3.
+            @activate
+            @params: userID
+            @headers: None
+            @link: https://hostlink/EmailAuthentication/routes/api/signup/activate/{user-toker}/
+            @returns: html page redirect
+        4.
+            @postQuestion
+            @param: userId, question, category,...
+            @headers: userid, token
+            @link: TBD
+            @returns: TBD
+        5.
+            @answerQuestion
+            @param
+
+
+
+
+*/
